@@ -22,7 +22,6 @@ public extension CustomAuth {
         userData: [String: Any] = [:]
     ) -> Promise<[String: Any]> {
         
-        
         let (tempPromise, seal) = Promise<[String: Any]>.pending()
         
         self.getTorusKey(
@@ -44,8 +43,6 @@ public extension CustomAuth {
             
             privateKeyBytes.append(contentsOf: publicKeyBytes)
 
-            
-            
             guard let account = Account(secretKey: Data(bytes: privateKeyBytes, count: 64)) else {
                 seal.reject(CASDKError.unknownError)
                 return
