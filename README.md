@@ -9,7 +9,7 @@ Use the adapter outright, or learn from the source code, either way the hope is 
 
 ## Xcode Projects
 
-`Select File -> Swift Packages -> Add Package Dependency` and enter `https://github.com/TOKR-labs/custom-auth-solana-adapter/`.
+_Select File -> Swift Packages -> Add Package Dependency_ and enter https://github.com/TOKR-labs/custom-auth-solana-adapter/.
 
 ### Swift Package Manager Projects
 You can add CustomAuthSolanaAdapter as a package dependency in your Package.swift file:
