@@ -1,9 +1,11 @@
 # Custom Auth Solana Adapter
 
-This library was created out of nessecity due to a few key factors: 
+By default the CustomAuth and OpenLogin SDKs generate an Ethereum wallet for every user. **This library adds the ability to create a Solana wallet at the same time.**
 
-1. There was a need to continue to use an already implemented authentication mechanism (e.g. OKTA) and to keep control over that experience.
-2. Generate a Solana wallet for every user that signs up for our app to preform on-chain actions.
+Use this library if you: 
+
+1. Have a need to use an already implemented authentication mechanism (although you could potentially use this with OpenLogin as well).
+2. Want to generate a Solana wallet for every user that signs up for your service and have access to both the public and secret keys.
 
 Use the adapter outright, or learn from the source code, either way the hope is that this can alleviate some of the pain of generating Solana wallets that are tied to users accounts and whose private key can be retrieved through the use of the custom auth library. 
 
