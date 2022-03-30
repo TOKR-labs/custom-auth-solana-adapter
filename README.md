@@ -1,3 +1,5 @@
+# Custom Auth Solana Adapter
+
 This library was created out of nessecity due to a few key factors: 
 
 1. There was a need to continue to use an already implemented authentication mechanism (e.g. OKTA) and to keep control over that experience.
